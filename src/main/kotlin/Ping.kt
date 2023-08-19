@@ -1,0 +1,1 @@
+fun ping(): String = "pong"
