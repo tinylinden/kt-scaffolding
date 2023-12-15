@@ -1,3 +1,5 @@
+import com.adarshr.gradle.testlogger.theme.ThemeType
+
 plugins {
     kotlin("jvm") version "1.9.0"
     id("com.adarshr.test-logger") version "3.1.0"
@@ -21,4 +23,8 @@ tasks.test {
 
 kotlin {
     jvmToolchain(17)
+}
+
+testlogger {
+    theme = ThemeType.PLAIN
 }
